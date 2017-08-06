@@ -45,7 +45,7 @@ $(document).ready(function() {
 
             if( $("[data-datepiker = '"+ attrDatapiker +"']").is(":hidden") ) {
 
-                $("[data-datepiker = '"+ attrDatapiker +"']").fadeIn(400);
+                $("[data-datepiker = '"+ attrDatapiker +"']").fadeIn(300);
                 $("[data-datepiker = '"+ attrDatapiker +"']").offset({left : leftCoor , top : topCoor});
 
             } else {
@@ -86,6 +86,19 @@ $(document).ready(function() {
 
                 $(".date-picker").fadeOut(300);
 
+            }
+
+        });
+
+        $(document).mouseup(function (e){
+
+            hide_element = $('.date-picker');
+
+            if (!hide_element.is(e.target)
+
+                && hide_element.has(e.target).length === 0) {
+
+                $(".date-picker").fadeOut(300);
             }
 
         });

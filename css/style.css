@@ -194,10 +194,11 @@ h3 {
 
 p {
     font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: normal;
     color: #333333;
+    text-align: center;
 }
 
 li {
@@ -316,12 +317,12 @@ a:active {
     width: 28px;
     height: 28px;
     outline: 1px solid red;
-    position: relative;
+/*    position: relative;
     top: 1px;
     background-image: url(../img/main_nav_sprite.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 -5px;
+    background-position: 0 -5px;*/
 }
 
 .plane-icon {
@@ -330,12 +331,12 @@ a:active {
     width: 26px;
     height: 26px;
     outline: 1px solid red;
-    position: relative;
+/*    position: relative;
     top: 1px;
     background-image: url(../img/main_nav_sprite.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 -29px;
+    background-position: 0 -29px;*/
 }
 
 .return-arrows {
@@ -343,9 +344,9 @@ a:active {
     vertical-align: top;
     width: 30px;
     height: 29px;
-    background-image: url(../img/search_good_block_sprite.png);
+/*    background-image: url(../img/search_good_block_sprite.png);
     background-repeat: no-repeat;
-    background-position: -59px -1px;
+    background-position: -59px -1px;*/
 }
 
 /*-------------------------------------------*/
@@ -1018,10 +1019,10 @@ a.tel-link:hover {
     background: rgba(0, 0, 0, .3);
 }*/
 
-.main-h-block {
+/*.main-h-block {
     display: inline-table;
     width: 100%;
-}
+}*/
 
 .promo-content .icon-block {
     display: table-cell;
@@ -1094,7 +1095,7 @@ a.tel-link:hover {
     top: 6px;
 }
 
-.mark-icon {
+/*.mark-icon {
     background-image: url(../img/search_good_block_sprite.png);
     background-repeat: no-repeat;
 }
@@ -1110,7 +1111,7 @@ a.tel-link:hover {
 .date-piker-icon {
     background-image: url(../img/search_good_block_sprite.png);
     background-repeat: no-repeat;
-}
+}*/
 
 .date-piker-icon.icon-1 {
     background-position: -177px 1px;
@@ -1894,15 +1895,6 @@ select {
     color: #ffffff;
 }
 
-p {
-    font-family: "PT Sans", Verdana, Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: normal;
-    color: #333333;
-    text-align: center;
-}
-
 /*-- /Section 3 Main Page --*/
 
 /*-- Section 4 Main Page --*/
@@ -2431,21 +2423,9 @@ p.systems-names {
     color: #333333;
 }
 
-.accordeon-item-txt-wrapp {
-    display: block;
-    width: 100%;
-    height: 0;
-    margin: 5px 0 0 0;
-    overflow: hidden;
-}
-
 .accordeon-item-txt {
     padding: 10px 0 17px 0;
     text-align: left;
-}
-
-.accordeon-item.active .accordeon-item-txt-wrapp {
-    height: auto;
 }
 
 .accordeon-item p {
@@ -2724,24 +2704,4 @@ footer {
     background-image: url(../img/socials_sprite.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-.soc-icon.icon-1 {
-    background-position: -17px 0;
-}
-
-.soc-icon.icon-2 {
-    background-position: -63px -1px;
-}
-
-.soc-icon.icon-3 {
-    background-position: -116px -3px;
-}
-
-.soc-icon.icon-4 {
-    background-position: -169px -1px;
-}
-
-.soc-icon.icon-5 {
-    background-position: -222px -1px;
 }
