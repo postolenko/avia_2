@@ -22,11 +22,9 @@
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	
-	<title></title>
+	<title>Поиск Дешевых Авиабилетов</title>
 	
 
 </head>
@@ -113,7 +111,11 @@
 
 				<div class="promo-block-sect">
 
-				<div class="row">					
+				<div class="row">
+
+					<img class="float_airplane float_elem_01" src="img/airplane_01.png" alt="" >
+					<img class="float_airplane float_elem_02" src="img/airplane_02.png" alt="" >
+					<img class="float_airplane float_elem_03" src="img/airplane_03.png" alt="" >
 
 					<div class="center-block">
 						<div class="row">
@@ -373,10 +375,10 @@
 				<div class="row">
 
 					<div class="thumbnials promo-thumbnails offset-ziro">
-						<div class="thumbnail">
+						<div class="thumbnail th-1">
 							<div class="inner">
 								<div class="icon-block">
-									<img src="img/promo_icons/icon_1.png" alt="">
+									<img class="float_adv_icon" src="img/advantages_icons/icon_01.png" alt="">
 								</div>
 								<p>Покупка онлайн<br /> за 5 минут</p>
 							</div>
@@ -384,7 +386,7 @@
 						<div class="thumbnail">
 							<div class="inner">
 								<div class="icon-block">
-									<img src="img/promo_icons/icon_2.png" alt="">
+									<img class="float_adv_icon" src="img/advantages_icons/icon_02.png" alt="">
 								</div>
 								<p>Безопасная<br /> оплата картой</p>
 							</div>
@@ -392,7 +394,7 @@
 						<div class="thumbnail">
 							<div class="inner">
 								<div class="icon-block">
-									<img src="img/promo_icons/icon_3.png" alt="">
+									<img class="float_adv_icon" src="img/advantages_icons/icon_03.png" alt="">
 								</div>
 								<p>Более 300<br /> направлений</p>
 							</div>
@@ -400,7 +402,7 @@
 						<div class="thumbnail">
 							<div class="inner">
 								<div class="icon-block">
-									<img src="img/promo_icons/icon_4.png" alt="">
+									<img class="float_adv_icon" src="img/advantages_icons/icon_04.png" alt="">
 								</div>
 								<p>Круглосуточная<br /> служба поддержки</p>
 							</div>
@@ -408,7 +410,7 @@
 						<div class="thumbnail">
 							<div class="inner">
 								<div class="icon-block">
-									<img src="img/promo_icons/icon_5.png" alt="">
+									<img class="float_adv_icon" src="img/advantages_icons/icon_05.png" alt="">
 								</div>
 								<p>Возврат<br /> без проблем</p>
 							</div>
@@ -424,7 +426,7 @@
 							<div class="thumbnail th-1">
 								<div class="inner">
 									<div class="icon-box">
-										<img src="img/service_thumbnials/icon_01.png" alt="">
+										<img src="img/service_icons/icon_01.png" alt="">
 									</div>
 									<p>Поиск</p>
 								</div>
@@ -433,7 +435,7 @@
 							<div class="thumbnail th-2">
 								<div class="inner">
 									<div class="icon-box">
-										<img src="img/service_thumbnials/icon_02.png" alt="">
+										<img src="img/service_icons/icon_02.png" alt="">
 									</div>
 									<p>Бронирование</p>
 								</div>
@@ -442,7 +444,7 @@
 							<div class="thumbnail th-3">
 								<div class="inner">
 									<div class="icon-box">
-										<img src="img/service_thumbnials/icon_03.png" alt="">
+										<img src="img/service_icons/icon_03.png" alt="">
 									</div>
 									<p>Покупка</p>
 								</div>
@@ -452,6 +454,10 @@
 
 						<h3 class="service-h3">Авиабилетов онлайн</h3>
 						<p class="service-p">С момента идеи специально для Российских пользователей</p>
+
+						<img class="float_elem-section_2 float_elem_04" src="img/float_elem_04.png" alt="">
+						<img class="float_elem-section_2 float_elem_05" src="img/float_elem_05.png" alt="">
+
 
 					</div>
 
@@ -463,7 +469,7 @@
 
 		<!-- Section 3 Main Page -->
 
-			<section>
+			<section class="section-3">
 
 				<div class="row">
 
@@ -514,7 +520,6 @@
 
 		<!-- /Section 4 Main Page -->
 
-
 		<!-- Section 5 Main Page -->
 
 			<section class="section-5">
@@ -523,7 +528,7 @@
 
 					<h2>Получите действительно качественное обслуживание</h2>
 
-					<img class="big-plane" src="img/service_bg.jpg" alt="" />
+					<img class="big-plane" src="img/service_airplane_bg.png" alt="" />
 
 					<div class="thumbnails service-thumbnails offset-ziro wow fadeInUp">		
 
@@ -568,28 +573,33 @@
 
 		<!-- Section 7 Main Page -->
 
-			<section>
+			<section class="section-7">
 
 				<div class="row">
+
 					<h2>Не переплачивайте</h2>
 
 					<div class="advantages-block">
 						<div class="advantages-row">
 							<div class="col col-1 advantage advantage-1">
-								<div class="col-p">
-									<p>Скрытых комиссий</p>
-								</div>
-								<div class="num-bg num-bg-1">
-									<p>0</p>
+								<div class="inner">
+									<div class="col-p">
+										<p>Скрытых комиссий</p>
+									</div>
+									<div class="num-bg num-bg-1">
+										<p>0</p>
+									</div>
 								</div>
 							</div>
 
-							<div class="col col-2 advantage advantage-2">									
-								<div class="num-bg num-bg-1">
-									<p>0</p>
-								</div>
-								<div class="col-p">
-									<p>Комиссия на перелетах<br > по России</p>
+							<div class="col col-2 advantage advantage-2">
+								<div class="inner">							
+									<div class="num-bg num-bg-2">
+										<p>0</p>
+									</div>
+									<div class="col-p">
+										<p>Комиссия на перелетах<br > по России</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -600,20 +610,24 @@
 
 						<div class="advantages-row">
 							<div class="col col-1 advantage advantage-3">
-								<div class="col-p">
-									<p>Комиссия за обмен и возврат билетов</p>
-								</div>
-								<div class="num-bg num-bg-3">
-									<p>0</p>
+								<div class="inner">
+									<div class="col-p">
+										<p>Комиссия за обмен и возврат билетов</p>
+									</div>
+									<div class="num-bg num-bg-3">
+										<p>0</p>
+									</div>
 								</div>
 							</div>
 
-							<div class="col col-2 advantage advantage-4">									
-								<div class="num-bg num-bg-1">
-									<p>0</p>
-								</div>
-								<div class="col-p">
-									<p>Комиссия на многих международных перелетах</p>
+							<div class="col col-2 advantage advantage-4">							
+								<div class="inner">
+									<div class="num-bg num-bg-4">
+										<p>0</p>
+									</div>
+									<div class="col-p">
+										<p>Комиссия на многих международных перелетах</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -635,10 +649,10 @@
 					<h2>Почувствуйте свободу</h2>
 
 					<ul class="payment-cards wow fadeInDown">
-						<li><i class="card card-1"></i></li>
-						<li><i class="card card-2"></i></li>
-						<li><i class="card card-3"></i></li>
-						<li><i class="card card-4"></i></li>
+						<li><img src="img/payment_cards/card_01.png" alt="" ></li>
+						<li><img src="img/payment_cards/card_02.png" alt="" ></li>
+						<li><img src="img/payment_cards/card_03.png" alt="" ></li>
+						<li><img src="img/payment_cards/card_04.png" alt="" ></li>
 					</ul>
 
 					<div class="thumbnails payments-systems offset-ziro wow fadeInDown">
@@ -693,7 +707,7 @@
 
 					<div class="accordeon wow fadeIn">
 							
-						<div class="accordeon-item active">
+						<div class="accordeon-item">
 							
 							<div class="accordeon-item-title">
 
@@ -841,7 +855,7 @@
 						<div class="inner-col inner-col-1">
 
 							<a class="footer-logo" href="#">
-								<img src="img/footer_logo.png" alt="Поиск дешевых авиабилетоа">
+								<img src="img/logo_footer.png" alt="Поиск дешевых авиабилетоа">
 							</a>
 
 						</div>
