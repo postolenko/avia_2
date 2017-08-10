@@ -513,12 +513,6 @@
 
 	/*-- Section 3 Main Page --*/
 
-	.service-thumbnails .thumbnail {
-		display: block;
-	    padding: 16px 1%;
-	    text-align: center;
-	}
-
 	.service-online-thumbnails .thumbnail {
 		margin: 10px 0;
 	}
@@ -540,6 +534,16 @@
 		position: relative;
 	}
 
+	/*-- /Section 3 Main Page --*/
+
+	/*-- Section 5 Main Page --*/
+
+	.service-thumbnails .thumbnail {
+		display: block;
+	    padding: 16px 1%;
+	    text-align: center;
+	}
+
 	.service-thumbnails .thumbnail p {
 		text-align: center;
 	}
@@ -555,8 +559,7 @@
 	    line-height: 22px;
 	}
 
-
-	/*-- /Section 3 Main Page --*/
+	/*-- /Section 5 Main Page --*/
 
 	/*-- Section 8 Main Page --*/
 
