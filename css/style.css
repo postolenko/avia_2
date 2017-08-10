@@ -885,7 +885,6 @@ a.tel-link:hover {
     color: #00cccc;
 }
 
-
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn-box {
@@ -1166,11 +1165,11 @@ a.tel-link:hover {
 }
 
 .mark-icon.icon-1 {
-    background-position: 1px 4px;
+    background-position: 4px 5px;
 }
 
 .mark-icon.icon-2 {
-    background-position: -116px 4px;
+    background-position: -33px 5px;
 }
 
 .date-piker-icon {
@@ -1179,11 +1178,17 @@ a.tel-link:hover {
 }
 
 .date-piker-icon.icon-1 {
-    background-position: -177px 1px;
+    background-position: -159px 5px;
 }
 
 .date-piker-icon.icon-2 {
-    background-position: -239px 1px;
+    background-position: -215px 5px;
+}
+
+.user-icon {
+    background-image: url(../img/search_good_block_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -272px 5px;
 }
 
 .input-block input {
@@ -1381,7 +1386,6 @@ a.tel-link:hover {
     display: none;
     width: 270px;
     background: rgba(255, 255, 255, 1);
-
     position: absolute;
     top: 0;
     left: 0;
@@ -1896,7 +1900,6 @@ a.tel-link:hover {
 }
 
 .service-online-thumbnails .icon-box img {
-    /*display: block;*/
     display: inline-block;
     vertical-align: top;
     width: auto;
@@ -2346,9 +2349,6 @@ a.tel-link:hover {
     width: 48%;
 }
 
-.advantage {
-}
-
 .advantage .inner {
     display: inline-table;
     vertical-align: top;
@@ -2369,14 +2369,6 @@ a.tel-link:hover {
 
 .advantage-4 {
     text-align: left;
-}
-
-.advantages-row .col-1 {
-
-}
-
-.advantages-row .col-2 {
-
 }
 
 .advantages-row .num-bg {
@@ -2617,7 +2609,6 @@ p.systems-names {
     padding: 73px 0 52px 0;
     position: relative;
     z-index: 2;
-    /*overflow: hidden;*/
 }
 
 .section-9 .row {
