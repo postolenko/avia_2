@@ -816,7 +816,7 @@ a.tel-link:hover {
     fill: #00cccc;
 }
 
-.header.fixed {
+.header-site.fixed {
     position: fixed;
     top: -10%;
     left: 0;
@@ -829,7 +829,7 @@ a.tel-link:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
 }
 
-.header.fixed.fixed-top {
+.header-site.fixed.fixed-top {
     top: 0 !important;
 
     -webkit-transition-property: top;
@@ -851,6 +851,27 @@ a.tel-link:hover {
     transition-property: top;
     transition-duration: .3s;
     transition-timing-function: ease;
+}
+
+.header-site.fixed-top:after {
+    height: 5px;
+}
+
+.header-site.fixed-top .header-row-1 .col {
+    padding: 0;
+}
+
+.header-site.fixed-top .main-nav-block {
+    padding: 4px 0 2px 0;
+}
+
+.header-site.fixed-top .search-block {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-site.fixed-top .main-nav li a {
+    padding: 0 0 3px 0;
 }
 
 .close-resp-nav {
@@ -890,6 +911,7 @@ a.tel-link:hover {
 .respmenubtn-box {
     display: none;
     width: 40px;
+    margin: 5px 0;
     text-align: center;
     position: relative;
     right: 3%;

@@ -16,11 +16,23 @@ $(document).ready(function() {
 
     getFooterPosition();
 
+    getHeaderFixedPosition();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        // ----------------------
+
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    });
+
+    $(document).scroll(function() {
+
+        getHeaderFixedPosition();
 
     });
 
@@ -201,6 +213,56 @@ $(document).ready(function() {
             }
 
         }, 35);
+
+    }
+
+    function getHeaderFixedPosition() {
+
+        if( bodyWidth > 768 ) {
+
+            if( $(window).scrollTop() >= $(".header-site").height() ) {
+
+                $(".header-site").addClass("fixed");
+
+                $(".header-site").css({
+                    "top" : -1 * $(".header-site").outerHeight(true) + "px"
+                });
+
+                setTimeout(function() {
+
+                    $(".header-site").addClass("fixed-top");
+
+                }, 300);
+
+                $("body").css({
+                    "padding-top" : $(".header-site").height() + "px"
+                });
+
+            } else {
+
+                $(".header-site").removeClass("fixed");
+
+                $(".header-site").css({
+                    "top" : 0 + "px"
+                });
+
+                setTimeout(function() {
+                    $(".header-site").removeClass("fixed-top");
+                }, 300);
+
+                $("body").css({
+                    "padding-top" : 0 + "px"
+                });
+
+            }
+
+        } else {
+
+            $("body").css({
+                "padding-top" : 0 + "px"
+            });
+
+        }
 
     }
 

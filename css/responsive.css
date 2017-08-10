@@ -539,7 +539,6 @@
 	/*-- Section 5 Main Page --*/
 
 	.service-thumbnails .thumbnail {
-		display: block;
 	    padding: 16px 1%;
 	    text-align: center;
 	}
@@ -618,7 +617,6 @@
 	/*-- .Section 9 Main Page --*/
 
 }
-
 
 
 @media only screen and (max-width: 480px) {
@@ -772,5 +770,13 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (min-width: 769px) {
+
+	.main-nav_resp {
+		display: block !important;
+	}
 
 }
