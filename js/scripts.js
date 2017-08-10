@@ -58,19 +58,7 @@ $(document).ready(function() {
 
         $(".close-datepiker").click(function() {
 
-            parentEl = $(this).parent();
-
-            for(;;) {
-
-                parentEl = parentEl.parent();
-
-                if(parentEl.hasClass("date-picker")) {
-
-                    break;
-
-                }
-
-            }
+            parentEl = $(this).closest(".date-picker");
 
             if( parentEl.is(":visible") ) {
 
@@ -145,17 +133,31 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".accordeon-item-txt").each(function() {
+        var accordeonItemContent;
+        var parentAccordeonItem;
+        var accordeonTxt;
 
-            $(this).slideUp(300);
+        $(".accordeon-item").each(function() {
+
+            accordeonItemContent = $(this).find(".accordeon-item-txt");
+
+            if( $(this).hasClass("active") ) {                
+
+                accordeonItemContent.slideDown(300);
+
+            } else {
+
+                accordeonItemContent.slideUp(300);
+
+            }            
 
         });
 
         $(".accordeon-item-title").click(function() {
 
-            var parentAccordeonItem = $(this).closest(".accordeon-item");
+            parentAccordeonItem = $(this).closest(".accordeon-item");
 
-            var accordeonTxt = parentAccordeonItem.find(".accordeon-item-txt");
+            accordeonTxt = parentAccordeonItem.find(".accordeon-item-txt");
 
             if( accordeonTxt.is(":hidden") ) {
 
