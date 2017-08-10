@@ -1092,7 +1092,7 @@ a.tel-link:hover {
 .input-block {
     display: inline-table;
     vertical-align: top;
-    width: 240px;
+    width: 236px;
     height: 38px;
     border: 1px solid #cccccc;
     background: rgba(255, 255, 255, 1);
@@ -1158,7 +1158,7 @@ a.tel-link:hover {
 .input-block input {
     display: table-cell;
     vertical-align: top;
-    width: 209px;
+    width: 205px;
     height: 38px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid transparent;
