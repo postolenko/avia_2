@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 
 
-     $(function() {
+    $(function() {
 
         $(".show_datepiker").click(function() {
 
@@ -99,6 +99,42 @@ $(document).ready(function() {
                 && hide_element.has(e.target).length === 0) {
 
                 $(".date-picker").fadeOut(300);
+            }
+
+        });
+
+    });
+
+    // -----------------------------
+
+    $(function() {
+
+        $(".respmenubtn").click(function() {
+
+            if( $(".main-nav_resp").is(":hidden") ) {
+
+                $(".main-nav_resp").fadeIn(400);
+
+            } else {
+
+                $(".main-nav_resp").fadeOut(300);
+
+            }
+
+        });
+
+        $(".close-resp-nav").click(function() {
+
+            $(".main-nav_resp").fadeOut(300);
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+               $(".main-nav_resp").fadeOut(300);
+ 
             }
 
         });
