@@ -339,6 +339,10 @@
 	    background-image: none;
 	}
 
+	.promo-thumbnails .thumbnail.th-1:after {
+		display: none;
+	}
+
 	.service-online-thumbnails .icon-box {
 	    height: 77px;
 	    margin: 0 0 18px 0;

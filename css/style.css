@@ -1814,6 +1814,20 @@ a.tel-link:hover {
     background-position: center;
 }
 
+.promo-thumbnails .thumbnail.th-1:after {
+    display: block;
+    content: "";
+    width: 64px;
+    height: 78px;
+    position: absolute;
+    top: 90px;
+    right: -13%;
+    background-image: url(../img/thumbnail_01_shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 .promo-thumbnails .icon-block {
     display: block;
     width: 100%;
